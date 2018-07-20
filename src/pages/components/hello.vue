@@ -1,6 +1,7 @@
 <template>
     <section class="main">
         <p>{{aaa}}</p>
+        <p>{{bbb}}</p>
     </section>
 </template>
 
@@ -9,7 +10,8 @@ export default {
 	name: "hello",
     data () {
         return {
-            aaa:"世界你好！！"
+            aaa:"世界你好！！",
+            bbb:"我是你心中的传说"
         }
     }
 }
