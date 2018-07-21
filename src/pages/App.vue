@@ -1,8 +1,9 @@
 <template>
     <section class="main">
         <p>{{name}}</p>
+        <p>{{sayhello}}</p>
         <img src="../img/igpidcart.png">
-        <hello></hello>
+        <hello :inputname="name" v-on:comefromchild = "getmessage"></hello>
     </section>
 </template>
 
@@ -12,12 +13,18 @@ import hello from './components/hello.vue'
 export default {
     data () {
         return {
-            name:"请摆好姿势准备拍照"
+            name:"请摆好姿势准备拍照",
+            sayhello:'自我安慰'
         }
     },
     components: {
-        hello: hello
+        hello
     },
+    methods:{
+        getmessage(value){
+            this.sayhello = value
+        }
+    }
 }
 </script>
 <style>
