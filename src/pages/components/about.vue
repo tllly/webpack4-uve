@@ -16,7 +16,7 @@
 		},
 		methods:{
 			intercept(){
-				this.str = this.str.match(/当前选择的寄件日期/)
+				this.str = this.str.match(/预计.*?\s/)[0]
 			}
 		}
 	})
