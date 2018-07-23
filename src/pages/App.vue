@@ -4,6 +4,10 @@
         <p>{{sayhello}}</p>
         <img src="../img/igpidcart.png">
         <hello :inputname="name" v-on:comefromchild = "getmessage"></hello>
+        <router-link to="/about">about</router-link>
+        <router-link to="/news">news</router-link>
+        
+        <router-view></router-view>
     </section>
 </template>
 
